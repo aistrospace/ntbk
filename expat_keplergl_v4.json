@@ -1,0 +1,165 @@
+{
+  "datasets": [
+    {
+      "version": "v1",
+      "data": {
+        "id": "vvzpce4kr",
+        "label": "Mining Project",
+        "color": [
+          143,
+          47,
+          191
+        ],
+        "allData": [
+          [
+    "Ghana",
+    7.946527,
+    -1.023194,
+            16932
+          ],
+          [
+    "Venezuela",
+    6.42375,
+    -66.58973,
+            31127
+          ],
+          [
+    "Angola",
+    -11.202692,
+    17.873887,
+            11869
+          ]
+        ],
+        "fields": [
+          {
+            "name": "Country",
+            "type": "string",
+            "format": ""
+          },
+          {
+            "name": "Latitude",
+            "type": "real",
+            "format": ""
+          },
+          {
+            "name": "Longitude",
+            "type": "real",
+            "format": ""
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "format": ""
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "version": "v1",
+    "config": {
+      "visState": {
+        "filters": [],
+        "layers": [
+          {
+            "id": "a6kif8",
+            "type": "point",
+            "config": {
+              "dataId": "vvzpce4kr",
+              "label": "Value",
+              "color": [
+                218,
+                112,
+                191
+              ],
+              "columns": {
+                "lat": "Latitude",
+                "lng": "Longitude",
+                "altitude": "Value"
+              },
+              "isVisible": true,
+              "visConfig": {
+                "radius": 20,
+                "fixedRadius": false,
+                "opacity": 1,
+                "outline": false,
+                "thickness": 2,
+                "colorRange": {
+                  "name": "Uber Viz Diverging 1.5",
+                  "type": "diverging",
+                  "category": "Uber",
+                  "colors": [
+                    "#00939C",
+                    "#5DBABF",
+                    "#BAE1E2",
+                    "#F8C0AA",
+                    "#DD7755",
+                    "#C22E00"
+                  ],
+                  "reversed": false
+                },
+                "radiusRange": [
+                  0,
+                  50
+                ],
+                "hi-precision": false
+              }
+            },
+            "visualChannels": {
+              "colorField": {
+                "name": "Value",
+                "type": "integer"
+              },
+              "colorScale": "quantize",
+              "sizeField": null,
+              "sizeScale": "linear"
+            }
+          }
+        ],
+        "interactionConfig": {
+          "tooltip": {
+            "fieldsToShow": {
+              "vvzpce4kr": [
+                "Country",
+                "Value"
+              ]
+            },
+            "enabled": true
+          },
+          "brush": {
+            "size": 0.5,
+            "enabled": false
+          }
+        },
+        "layerBlending": "normal",
+        "splitMaps": []
+      },
+      "mapState": {
+        "bearing": 0,
+        "dragRotate": false,
+        "latitude": 15.961342680719374,
+        "longitude": 26.963756185099957,
+        "pitch": 0,
+        "zoom": 2,
+        "isSplit": false
+      },
+      "mapStyle": {
+        "styleType": "muted_night",
+        "topLayerGroups": {},
+        "visibleLayerGroups": {
+          "label": true,
+          "road": false,
+          "border": true,
+          "building": false,
+          "water": true,
+          "land": true
+        },
+        "mapStyles": {}
+      }
+    }
+  },
+  "info": {
+    "app": "kepler.gl",
+    "created_at": "Thu Oct 03 2024 23:26:15 GMT+0100 (GMT Daylight Time)"
+  }
+}
